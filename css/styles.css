@@ -1,0 +1,41 @@
+*{
+	margin:0;
+	border: none;
+}
+
+body .container{
+	padding-right: 120px;
+	padding-left: 120px;
+}
+
+section.row{
+	left: auto;
+	right: auto;
+}
+
+h1.pageTitle{
+	margin-bottom: 30px;
+	height: 70px;
+	line-height: 70px;
+}
+div.imgTile{
+	/*border: 1px solid #000000;*/
+/*	height: 180px;
+	width: 180px;*/
+	margin-bottom: 20px;
+	margin-right: auto;
+	/*min-width: 300px;*/
+	left: auto;
+	right: auto;
+	overflow: hidden;
+}
+
+.img-thumbnail{
+	border: none;
+}
+
+@media (max-width: 992px){
+	div.imgTile{
+		margin-left: 25px;
+}
+/*NOT WORKING - try to move tile to center on small screen*/
