@@ -42,12 +42,12 @@ body.lb-disable-scrolling {
 
 .lb-outerContainer {
   position: relative;
-  background-color: white;
+  background-color: #0d0d0d;
   *zoom: 1;
   width: 250px;
   height: 250px;
   margin: 0 auto;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 .lb-outerContainer:after {
@@ -109,10 +109,10 @@ body.lb-disable-scrolling {
   background: url(../img/lightbox/prev.png) left 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  -webkit-transition: opacity 0.6s;
-  -moz-transition: opacity 0.6s;
-  -o-transition: opacity 0.6s;
-  transition: opacity 0.6s;
+  -webkit-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
 
 .lb-nav a.lb-prev:hover {
@@ -127,10 +127,10 @@ body.lb-disable-scrolling {
   background: url(../img/lightbox/next.png) right 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  -webkit-transition: opacity 0.6s;
-  -moz-transition: opacity 0.6s;
-  -o-transition: opacity 0.6s;
-  transition: opacity 0.6s;
+  -webkit-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
 
 .lb-nav a.lb-next:hover {
@@ -170,8 +170,9 @@ body.lb-disable-scrolling {
 }
 
 .lb-data .lb-caption {
+  font-family: "pier";
   font-size: 13px;
-  font-weight: bold;
+  /*font-weight: bold;*/
   line-height: 1em;
 }
 
@@ -181,13 +182,14 @@ body.lb-disable-scrolling {
   padding-bottom: 1em;
   font-size: 12px;
   color: #999999;
+  opacity: 0;
 }
 
 .lb-data .lb-close {
   display: block;
   float: right;
-  width: 30px;
-  height: 30px;
+  /*width: 30px;
+  height: 30px;*/
   background: url(../img/lightbox/close.png) top right no-repeat;
   text-align: right;
   outline: none;
