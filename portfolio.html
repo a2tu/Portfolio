@@ -4,11 +4,12 @@
 	<meta charset=“utf-8”>
 	<meta http-equiv=“X-UA-Compatible” content=“IE=edge”>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio Page</title>
+	<title>Projects Page</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/styles.css"/>
 	<script src="https://use.fontawesome.com/22231013e6.js"></script>
+
 </head>
 
 <body>
@@ -18,11 +19,11 @@
 				<a class="homeLink" href="index.html">
 					<h1 id="nameTitle" class="pageTitle text-center text-uppercase">Alice Tu</h1>
 				</a>
-				<p id="jobTitle">UX Designer, San Francisco</p>
+				<p id="jobTitle">UX Designer, Oakland</p>
 				<ul id="mainMenu" class="nav navbar-nav">
-					<li id="menuHome"><a href="index.html" class="text-uppercase">about<span class="sr-only">(current)</span></a></li>
+					<li id="menuHome"><a href="index.html" class="text-uppercase">about</a></li>
 					<!-- <li id="menuAbout"><a href="about.html">About</a></li> -->
-					<li id="menuPortfolio"><a href="portfolio.html" class="text-uppercase active">portfolio</a></li>
+					<li id="menuPortfolio"><a href="portfolio.html" class="text-uppercase active">projects<span class="sr-only">(current)</span></a></li>
 					<li id="menuGallery"><a href="gallery.html" class="text-uppercase">gallery</a></li>
 				</ul>
 			</div>
@@ -31,23 +32,88 @@
 
 
 	<div id="main-content" class="container">
-		<!-- <h2 id="portfolioTitle" class="pageTitle text-center">Portfolio</h1> -->
 		<section id="portfolioContent" class="row">
-			<h2 class="projectTitle" id="travelApp">Travel App</h2>
-			<div>Background</div>
-			<!-- problem statement -->
-			<div>Process</div>
-				<p>Research</p>
-				<!-- user interviews -->
-				<p>Synthesis</p>
-				<!-- affinity mapping / persona / storyboard -->
-			<div>Prototype / Wireframe</div>
-				<p>Lo-fi</p>
-				<p>Hi-Fi</p>
-				<p>Style Guide</p>
-		</section>
-		<section id="PerthMap" class="row">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54163.70794157807!2d115.81743341573946!3d-31.95460909500415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32bad5293bd573%3A0x504f0b535df4ee0!2sPerth+WA+6000%2C+Australia!5e0!3m2!1sen!2sus!4v1469381031804" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<h2 class="projectTitle" id="travelApp">SnapGuide</h2>
+			<p class="projectTagline">Photo guides to lead your travels</p>
+
+			<div id="intro">
+				<p>Our daily lives are structured by routines that bring order and efficiency to our days and work. We travel to experience newness and purposefully set aside these routines that make our lives easier. Traveling puts known comforts and the thrill of discovery at odds.</p>
+
+				<img id="homeScreenLeft" class="img-responsive" src="assets/snapguide/homeScreen_iphone.png" alt="SnapGuide home screen on iphone">
+
+				<img id="detailScreenRight" class="img-responsive" src="assets/snapguide/detailScreen_iphone.png" alt="SnapGuide detail screen on iphone">
+
+				<p>SnapGuide is a mobile collection of photo travel guides created by other travelers. It enables travelers to spontaneously find things to do and see while on the road. SnapGuide aims to make traveling personal and fulfilling.</p>
+			</div>
+
+			<h3 id="myRole" class="text-uppercase projHeading">my role</h3> 
+				<p >I created SnapGuide over 6-weeks for a UX design course. My task was to address a problem users have with online or mobile services that they use to support their travel.</p>
+				<p>I oversaw the full creation of this project from conducting user interviews and analyzing the results, to making wireframes, prototypes, and performing usability tests that informed my redesigns. By working through each stage of design for SnapGuide I experienced how every phase impacts others phases and the final product.</p>
+
+			<h3 class="text-uppercase projHeading">it's hard to make plans from a distance</h3>
+				<p>Planning a travel itinerary remotely is difficult to do even with the help of the internet. While there are countless travel resources available to travelers today the most accurate information is available to a traveler when she arrives at her travel destination. Additionally although some planning is still necessary to ensure a fulfilling experience travel is most rewarding when there is room for serendipity. </p> 
+				<p>Before sitting down to talk with travelers I had thought that one of the most frustrating parts of travel planning was the process of researching and booking flights, particularly for international travel. I quickly found out that this was not a primary concern for travelers.</p>
+
+			<h3 class="text-uppercase projHeading">talking to people who travel</h3>
+				<blockquote>&ldquo;I want to get a full experience but I don't really know where to start.&rdquo;</blockquote>
+				<blockquote>&ldquo;As soon as I get there it will be very apparent what I should have done and if I made the right decision or the wrong decision.&rdquo;</blockquote>
+				<blockquote>&ldquo;I was interested in finding out of the way things that were interesting to me. I could spend whole days bouncing between coffee shops and bookstores ... and that was a great day to me.&rdquo;</blockquote>
+
+				<p>It only took a few conversations to learn that although coordinating logistics such as flights and accomodations came with certain challenges users still felt in control because they had tools to address these issues. 
+
+				Much stronger emotions were expressed when people spoke about their anxiety of missing out on fulfilling experiences or revealed their concerns about making the right planning choices for themselves personally. The challenge lay not only in finding things to do and places to see, but also in how enriching those experiences were to the individual. To cap it off travelers were aware that they do not always know what they are looking for.</p>
+
+				 <section id="keyFindings">
+				 	<h4>Key Findings</h4>
+				 	<ul>
+					 	<li>People struggled with authoritative guides such as the Lonely Planet. While such comprehensive guides provide a good starting point to outline trip activities, it also emphasizes all that a traveler is unable to accomplish in her limited timeframe.</li>
+					 	<li>Quirky and personal travel suggestions by other travelers or local guides can be more compelling</li>
+					 	<li>Local knowledge is invaluable. People travel to places their friends or relatives are living as a starting point for their trips.</li>
+					 	<li>Online reviews and even personal recommendations are taken with a grain of salt. The best way to discover a place is yourself.</li>
+					 </ul>
+				</section>
+
+			<h3 class="text-uppercase projHeading">meet ian</h3>
+				<p>I created Ian, a persona that embodied the characteristics, behaviors and needs of my target user by drawing from my initial interviews. By referring back to Ian's goals I was able to focus on the features I needed to develop for an MVP to meet his needs. </p>
+
+				<!-- insert Ian persona sketch -->
+
+
+				<img class="img-responsive" src="assets/snapguide/storyboard.jpg" alt="Persona storyboard">
+
+				<p>***Ian needs a way to find things to do in real-time so he can maximize his travels in a way that feels meaningful to him.</p>
+
+			<h3 class="text-uppercase projHeading">reaching an mvp</h3>
+				<p>Employing a <a href="https://www.smashingmagazine.com/2011/03/lean-ux-getting-out-of-the-deliverables-business/">lean UX method</a>. I approached this project with a focus of obtaining user feedback early and often. Through a combination of sketching and rapid prototyping I was able to quickly test and retest my designs to align with user needs and expectations.</p> 
+
+				<div>
+					<h4>Primary Features</h4>
+					<p>**explain photo based searches etc.</p>
+				</div>
+
+				<div>
+					<h4>User Flow</h4>
+					<p>I started with this basic user flow that shows a user accomplishing one of two paths: discovering an activity or item of interest by location or with filters, or adding a new post of their own to share with other users.</p> 
+
+					<img class="img-responsive" src="assets/snapguide/userflow.jpg" alt="Userflow diagram, first draft">
+				</div>
+
+				<div>
+					<h4>IA sitemapping; before / after</h4>
+				</div>
+
+			<h3 class="text-uppercase projHeading">a bit of a bumpy start</h3>
+				<p>I started by drawing out a host of ideas without limiting myself to particular elements or functionalities. Although multiple travelers had mentioned performing image searches to get travel inspiration I also wanted to explore any range of options. Some of these ideas included a messaging service to connect with nearby travelers as well as a map-based itinerary which generated nearby landmarks and actiivties.</p>
+				<p>From here I built-out an idea for a photo-oriented review app and conducted a paper prototype test with 3 participants to gather a preliminary round of data.</p>
+				<!-- insert initial sketches / explain issues during paper prototyping -->
+				<img id="screenflow" class="img-responsive" src="assets/snapguide/screenflow.jpg" alt="Initial screenflow, sketched screens">
+
+				<h4 id="paperTestFindings">What I discovered...</h4>
+					<p>It was unclear to participants how the staggered system of first saving and then reviewing items worked. The separate interactions of saving an item of interest into a list and then returning to review a positive experience felt clunky. There was also sometimes too much happening on one screen for testers to know how to advance to another screen. However participants loved the whimsical feel of the photo-centric screens and contrasted them to text heavy review sites such as TripIt or Yelp. </p>
+
+			<h3 class="text-uppercase projHeading">designing, listening, testing</h3>
+				<p>***Participants also relied heavily on the sparse information I provided for each item to make decisions and actions. </p>
+
 		</section>
 	</div>
 

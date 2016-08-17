@@ -2,10 +2,6 @@
 	font-family: 'Pier';
 	src: url('../fonts/pier.otf');
 }
-/*@font-face{
-	font-family: 'Jaapokki';
-	src: url('../fonts/Jaapokki-Regular.otf');*/
-}
 
 *{
 	margin:0;
@@ -40,7 +36,7 @@ a.homeLink{
 #mainMenu.nav.navbar-nav a{
 	color: #252B33;
 	font-family: "Pier";
-	font-size: 1.2em;
+	font-size: 1.1em;
 	-webkit-transition: -webkit-transform;
 	-moz-transition: -moz-transform;
 	transition: transform;
@@ -67,7 +63,6 @@ a.homeLink{
 }
 
 
-
 /*FOOTER*/
 footer.footer{
 	margin-top: 50px;
@@ -81,7 +76,7 @@ footer.footer{
 
 .footerLinks>a{
 	position: relative;
-	font-size: 1.2em;
+	font-size: 1em;
 	display: inline-block;
 	margin: 0 8px;
 	line-height: 20px;
@@ -104,7 +99,8 @@ footer.footer{
 
 
 footer .footerCR{
-	font-size: 0.8em;
+	font-size: 0.7em;
+	font-family: 'Roboto', sans-serif;
 }
 
 /*MAIN CONTENT*/
@@ -120,7 +116,7 @@ section.row{
 
 h1{
 	font-family: "Pier";
-	font-size: 4em;
+	font-size: 3.5em;
 	margin-top: 20px;
 	margin-bottom: 0;
 	color: #252B33;
@@ -128,6 +124,7 @@ h1{
 
 #jobTitle{
 	font-family: 'Roboto', sans-serif;
+	font-size: 0.9em;
 }
 
 /*MAYBE TO DELETE*/
@@ -175,15 +172,24 @@ div#resume{
 
 div#mainBlurb{
 	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
 	display: inline-block;
 	max-width: 400px;
-	margin-top:30px;
+	margin-top:20px;
 	padding-left:0;
 }
 
 div#mainBlurb>span{
+	font-family: 'Roboto', sans-serif;
 	font-size: 1.2em;
 	font-weight: bold;
+}
+
+div#mainBlurb span#quirkBlurb{
+	display: inline-block;
+	margin-top:20px;
+	font-size: 1em;
+	font-weight: normal;
 }
 
 div#mainBlurb span#closingBlurb{
@@ -200,7 +206,82 @@ div#mainBlurb span#skillsBlurb{
 	font-weight: normal;
 }
 
+/*PORTFOLIO*/
+#portfolioContent h2.projectTitle{
+	font-family: "Pier";
+	font-size: 4em;
+	margin-bottom: 0;
+}
+
+#intro img{
+	display: inline;
+	width: 300px;
+	height: auto;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+h3.projHeading{
+	font-family: "Roboto";
+	font-size: 2em;
+	font-weight: bold;
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+#portfolioContent p{
+	display: inline-block;
+	text-align: left;
+	font-family: 'Roboto';
+	font-size: 1.1em;
+	max-width: 750px;
+	margin: 0, auto;
+}
+
+#portfolioContent p.projectTagline{
+	margin-bottom: 3em;
+	font-style: italic;
+}
+
+#portfolioContent div#intro p:first-child{
+	font-size: 1.3em;
+}
+
+#portfolioContent div#intro p:last-child{
+	font-style: italic;
+}
+
+section#keyFindings{
+	margin-top: 2em;
+}
+
+#keyFindings li{
+	display: inline-block;
+	text-align: left;
+	width: 65%;
+	margin: 0, auto;
+}
+
+img#screenflow{
+	width: 80%;
+	height: auto;
+	display: inline-block;
+	margin-top: 2em;
+	margin: 0, auto;
+	opacity: .75;
+}
+
+h4#paperTestFindings{
+	margin-top: 2em;
+}
+
 /*GALLERY IMAGES*/
+
+#galleryBlurb{
+	margin-top: 20px;
+	font-family: "Roboto";
+	font-size: 0.9em;
+}
 
 section#galleryTiles{
 	margin-top: 25px;
@@ -219,11 +300,21 @@ div.imgTile{
 	border: none;
 }
 
+.imgTile figcaption{
+	font-family: "Pier";
+}
+
 
 /*RESPONSIVE VIEWS*/
 @media (max-width: 992px){
 	div.imgTile{
 		margin-left: 5.5%;
+	}
+	#profileImg{
+		margin-top: 30px;
+	}
+	div#mainBlurb{
+		margin-top: 10px;
 	}
 }
 
@@ -243,6 +334,25 @@ div.imgTile{
 		max-width: 300px;
 		margin-right: 5%;
 	}
+	.navbar-nav>li>a{
+		padding-bottom: 7px;
+	}
+	.navbar-nav #menuHome a.active, 
+	.navbar-nav #menuHome a.active:focus, 
+	.navbar-nav #menuHome a.active:hover{
+		background-color: transparent;
+		border-bottom: 2px #404b59 solid;
+		width: 50%;
+		margin: 15px auto;
+	}
+	.navbar-nav #menuGallery a.active, 
+	.navbar-nav #menuGallery a.active:focus, 
+	.navbar-nav #menuGallery a.active:hover{
+		background-color: transparent;
+		border-bottom: 2px #404b59 solid;
+		width: 60%;
+		margin: 15px auto;
+	}
 }
 
 @media (max-width: 696px){
@@ -257,6 +367,9 @@ div.imgTile{
 	}
 	div#mainBlurb span#skillsBlurb{
 		display: block;
+	}
+	ul#keyFindings li{
+		width: 80%;
 	}
 }
 
