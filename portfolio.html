@@ -15,7 +15,7 @@
 <body>
 	<header>
 		<nav class="navbar navbar-default navbar-static-top">
-			<div class="container">
+			<div id="topNav" class="container">
 				<a class="homeLink" href="index.html">
 					<h1 id="nameTitle" class="pageTitle text-center text-uppercase">Alice Tu</h1>
 				</a>
@@ -31,19 +31,23 @@
 	</header>
 
 
-	<div id="main-content" class="container">
-		<section id="portfolioContent" class="row">
+	<div id="introBanner" class="container">
+		<section class="row">
 			<h2 class="projectTitle" id="travelApp">SnapGuide</h2>
 			<p class="projectTagline">Photo guides to lead your travels</p>
 
-			<div id="intro">
-				<p>Our daily lives are structured by routines that bring order and efficiency to our days and work. We travel to experience newness and purposefully set aside these routines that make our lives easier. Traveling puts known comforts and the thrill of discovery at odds.</p>
+			<p>Our daily lives are structured by routines that bring order and efficiency to our days and work. We travel to experience newness and purposefully set aside these routines that make our lives easier. Traveling puts known comforts and the thrill of discovery at odds.</p>
+		</section>
+	</div>
 
+	<div id="main-content" class="container">
+		<section id="portfolioContent" class="row">
+			<div id="intro">
 				<img id="homeScreenLeft" class="img-responsive" src="assets/snapguide/homeScreen_iphone.png" alt="SnapGuide home screen on iphone">
 
 				<img id="detailScreenRight" class="img-responsive" src="assets/snapguide/detailScreen_iphone.png" alt="SnapGuide detail screen on iphone">
 
-				<p>SnapGuide is a mobile collection of photo travel guides created by other travelers. It enables travelers to spontaneously find things to do and see while on the road. SnapGuide aims to make traveling personal and fulfilling.</p>
+				<p id="projDescription">SnapGuide is a mobile collection of photo travel guides created by other travelers. It enables travelers to spontaneously find things to do and see while on the road. SnapGuide aims to make traveling personal and fulfilling.</p>
 			</div>
 
 			<h3 id="myRole" class="text-uppercase projHeading">my role</h3> 
@@ -59,13 +63,13 @@
 				<blockquote>&ldquo;As soon as I get there it will be very apparent what I should have done and if I made the right decision or the wrong decision.&rdquo;</blockquote>
 				<blockquote>&ldquo;I was interested in finding out of the way things that were interesting to me. I could spend whole days bouncing between coffee shops and bookstores ... and that was a great day to me.&rdquo;</blockquote>
 
-				<p>It only took a few conversations to learn that although coordinating logistics such as flights and accomodations came with certain challenges users still felt in control because they had tools to address these issues. 
+				<p>It only took a few conversations to learn that while coordinating logistics such as flights and accomodations came with certain challenges users still felt in control because they had tools to address these issues. 
 
-				Much stronger emotions were expressed when people spoke about their anxiety of missing out on fulfilling experiences or revealed their concerns about making the right planning choices for themselves personally. The challenge lay not only in finding things to do and places to see, but also in how enriching those experiences were to the individual. To cap it off travelers were aware that they do not always know what they are looking for.</p>
+				Much stronger emotions came out when people spoke about their anxiety of missing out on fulfilling experiences or revealed their concerns about making the right planning choices for themselves personally. The challenge lay not only in finding things to do and places to see but also in how enriching those experiences were to the individual. To cap it off travelers were aware that they do not always know what they are looking for.</p>
 
-				 <section id="keyFindings">
-				 	<h4>Key Findings</h4>
-				 	<ul>
+				<section id="keyFindings">
+					<h4>Points that Stood Out</h4>
+					<ul>
 					 	<li>People struggled with authoritative guides such as the Lonely Planet. While such comprehensive guides provide a good starting point to outline trip activities, it also emphasizes all that a traveler is unable to accomplish in her limited timeframe.</li>
 					 	<li>Quirky and personal travel suggestions by other travelers or local guides can be more compelling</li>
 					 	<li>Local knowledge is invaluable. People travel to places their friends or relatives are living as a starting point for their trips.</li>
@@ -74,45 +78,95 @@
 				</section>
 
 			<h3 class="text-uppercase projHeading">meet ian</h3>
-				<p>I created Ian, a persona that embodied the characteristics, behaviors and needs of my target user by drawing from my initial interviews. By referring back to Ian's goals I was able to focus on the features I needed to develop for an MVP to meet his needs. </p>
+				<p>Ian is a persona I created to express the characteristics, behaviors and needs of my target user. By referring back to Ian's goals I was able to focus on the features I needed to develop for an MVP to meet his needs. </p>
 
-				<!-- insert Ian persona sketch -->
+				<img class="img-responsive" src="assets/snapguide/persona_ian.png" alt="User persona profile">
 
+				<p>Ian's <span>primary goal</span> is to find things to do in real-time so he can maximize his travels in a way that feels meaningful to him.</p>
 
-				<img class="img-responsive" src="assets/snapguide/storyboard.jpg" alt="Persona storyboard">
+				<img id="storyboard" class="img-responsive" src="assets/snapguide/storyboard.jpg" alt="Persona storyboard">
 
-				<p>***Ian needs a way to find things to do in real-time so he can maximize his travels in a way that feels meaningful to him.</p>
 
 			<h3 class="text-uppercase projHeading">reaching an mvp</h3>
-				<p>Employing a <a href="https://www.smashingmagazine.com/2011/03/lean-ux-getting-out-of-the-deliverables-business/">lean UX method</a>. I approached this project with a focus of obtaining user feedback early and often. Through a combination of sketching and rapid prototyping I was able to quickly test and retest my designs to align with user needs and expectations.</p> 
+				<p>Employing a <a href="https://www.smashingmagazine.com/2011/03/lean-ux-getting-out-of-the-deliverables-business/">lean UX method</a>. I approached this project with a focus on obtaining user feedback early and often. Through a combination of sketching and rapid prototyping I was able to quickly test and retest my designs to align with user needs and expectations.</p> 
 
-				<div>
+				<div class="MVPstage">
 					<h4>Primary Features</h4>
-					<p>**explain photo based searches etc.</p>
+					<p>I synthesized the information I now had into reoccuring themes expressed by multiple travelers. I used a combination of affinity mapping and notetaking to arrive at the user goals below. From these core goals I pared down an array of plausible features into a primary list.</p>
+
+					<img id="features" class="img-responsive" src="assets/snapguide/features.png" alt="Features prioritization by aligning with user goals">
 				</div>
 
-				<div>
+				<div class="MVPstage">
 					<h4>User Flow</h4>
-					<p>I started with this basic user flow that shows a user accomplishing one of two paths: discovering an activity or item of interest by location or with filters, or adding a new post of their own to share with other users.</p> 
+					<p>This initial user flow shows a user accomplishing one of two paths: discovering an activity or item of interest by location or by applying filters, or adding a new post of their own to share with other users.</p> 
 
 					<img class="img-responsive" src="assets/snapguide/userflow.jpg" alt="Userflow diagram, first draft">
 				</div>
 
-				<div>
+				<div class="MVPstage">
 					<h4>IA sitemapping; before / after</h4>
 				</div>
 
 			<h3 class="text-uppercase projHeading">a bit of a bumpy start</h3>
-				<p>I started by drawing out a host of ideas without limiting myself to particular elements or functionalities. Although multiple travelers had mentioned performing image searches to get travel inspiration I also wanted to explore any range of options. Some of these ideas included a messaging service to connect with nearby travelers as well as a map-based itinerary which generated nearby landmarks and actiivties.</p>
+				<p>I started by drawing out a host of ideas without limiting myself to particular elements or functionalities. Although multiple travelers had mentioned performing image searches to get travel inspiration I also wanted to explore any range of options. Some of these ideas included a messaging service to connect with nearby travelers as well as a map-based homepage which generated nearby landmarks and actiivties.</p>
 				<p>From here I built-out an idea for a photo-oriented review app and conducted a paper prototype test with 3 participants to gather a preliminary round of data.</p>
-				<!-- insert initial sketches / explain issues during paper prototyping -->
+				
 				<img id="screenflow" class="img-responsive" src="assets/snapguide/screenflow.jpg" alt="Initial screenflow, sketched screens">
 
-				<h4 id="paperTestFindings">What I discovered...</h4>
+				<div id="paperTestFindings">
+					<h4>What I discovered...</h4>
 					<p>It was unclear to participants how the staggered system of first saving and then reviewing items worked. The separate interactions of saving an item of interest into a list and then returning to review a positive experience felt clunky. There was also sometimes too much happening on one screen for testers to know how to advance to another screen. However participants loved the whimsical feel of the photo-centric screens and contrasted them to text heavy review sites such as TripIt or Yelp. </p>
+				</div>
 
-			<h3 class="text-uppercase projHeading">designing, listening, testing</h3>
-				<p>***Participants also relied heavily on the sparse information I provided for each item to make decisions and actions. </p>
+			<h3 class="text-uppercase projHeading">listening, designing, testing</h3>
+				<p>***What elements were added?</p>
+				<p>***maintain focused on visual</p>
+				<p>***Added real content- Participants also relied heavily on the sparse information I provided for each item to make decisions and actions.</p>
+				<p>***challenges with bookmark vs. heart</p>
+				<p>***polaroid recognition</p>
+
+				<img id="wires" class="img-responsive" src="assets/snapguide/wiresBoard2.jpg" alt="Three iterations of wires and prototypes">
+
+			<h3 id="revisedScreens" class="text-uppercase projHeading">before and after</h3>
+				<p> These are a few examples of the changes I made over multiple rounds of wireframing and testing new prototypes with users.</p>
+
+				<h4 class="screenTitle">Home screen</h4>
+					<p>The initial home screen I tested was stark. Because of the lack of elements on the home screen participants frequently returned to the sidebar hamburger menu in an effort to gain greater navigational control. I brought some of these elements out from the sidebar menu for easier access and also added sample content into the protoype. 
+					<img id="homescreen" class="img-responsive" src="assets/snapguide/homescreens.jpg" alt="Homescreens before and after">
+				<hr/>
+
+				<h4 class="screenTitle">Item detail</h4>
+					<p>The original design started out as an app to review landmarks or things to do with contributions from other users. Several participants compared it to a visual Yelp. The resulting expectation was that logistical information about the review would be available such as a summary description, opening hours and a map of the location. I wanted to shift the focus from logistics to personal experiences.</p>
+					<p> When I changed the focus from user reviews to user <a href="#guides">Guides</a> there was no longer a need to browse through different users' input about one item. Instead the describing details on the item screen could be simplified to capture the user's experience in the context of her trip.</p>
+					<img id="itemDetail" class="img-responsive" src="assets/snapguide/itemDetail.jpg" alt="Item card details screens before and after">
+				<hr/>
+
+				<h4 class="screenTitle">Navigation</h4>
+					<p>The sidebar menu on the left served as the global navigation for the app. Certain actions such as adding a new post or a review were buried under multiple levels from this screen. I incorporated a static global navigation menu to the bottom of the home screen for direct access to features such as search and adding new posts. By bringing some of these elements out of hiding I was able to introduce a new feature, Guides, that then became the heart of the product.
+					<img id="navigation" class="img-responsive" src="assets/snapguide/navigation.jpg" alt="Sidebar navigation screens before and after">
+				<hr/>
+
+				<h4 class="screenTitle">Adding in Search</h4>
+					<p> I intentionally omitted the option to search in earlier prototypes to test whether participants would be more encouraged to operate in the moment rather than in the future. Not having the ability to search limits how much a user can plan ahead. Although recommendations are surfaced based on a user's current location, providing activity options for the present time, nearly every participant missed the search feature immediately. I put it back in. 
+					<img id="search" class="img-responsive" src="assets/snapguide/search.jpg" alt="Search screen, added">
+				<hr/>
+
+				<h4 id="guides" class="screenTitle">Adding in Guides</h4>
+					<p>As the product developed, it became clear that it was missing a core user need. More important than finding things to populate their travel itineraries with, travelers wanted their trips to be personal. One participant told me the story of how he had met travelers in Vietnam who warned him away from the beach town of Nha Trang. He went anyway, stayed two weeks and it turned out to be one of his favorite stops.</p>
+					<p>Reviews are snapshots of experiences taken out of context and heavily influenced. They can help us locate a restaurant for dinner but once we are there the experience is ours to own. I created Guides as a way to return a snapshot experience into a more robust and connected story. 
+
+					<img id="guides" class="img-responsive" src="assets/snapguide/guides.jpg" alt="Guides screens, added">
+				<hr/>
+
+				<h4 class="screenTitle">New posts</h4>
+					<p>I changed the flow for adding a new post to align with existing design patterns. I moved the action for progressing to the bottom of the screen and added dropdown options to input fields. Finally I replaced the concept of reviews with a simpler star rating system. 
+
+					<img id="newPost" class="img-responsive" src="assets/snapguide/newPost.jpg" alt="New posts screens before and after">
+
+			<h3 class="text-uppercase projHeading">what i took away</h3>
+				<p>** As I started exploring ideas and developing them into wireframes I lost sight of the primary need I had initially established. While I was intent on fulfilling the goal of helping travelers discover things to do on their travels, I 
+
 
 		</section>
 	</div>

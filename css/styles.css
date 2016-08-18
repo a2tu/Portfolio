@@ -15,9 +15,15 @@
 nav.navbar{
 	background-color: #ffffff;
 	border: none;
+	/*margin-bottom: 0;*/
 }
 
-div.container{
+div#topNav{
+	text-align: center;
+	margin-top: 2%;
+}
+
+div#main-content{
 	text-align: center;
 	margin-top: 2%;
 }
@@ -27,7 +33,6 @@ a.homeLink{
 }
 
 #mainMenu.nav.navbar-nav{
-	/*border: 1px solid #000000;*/
 	display: inline-block;
 	float: none;
 	margin: 10px auto 0;
@@ -76,7 +81,7 @@ footer.footer{
 
 .footerLinks>a{
 	position: relative;
-	font-size: 1em;
+	font-size: 1.1em;
 	display: inline-block;
 	margin: 0 8px;
 	line-height: 20px;
@@ -99,7 +104,7 @@ footer.footer{
 
 
 footer .footerCR{
-	font-size: 0.7em;
+	font-size: 0.8em;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -124,7 +129,7 @@ h1{
 
 #jobTitle{
 	font-family: 'Roboto', sans-serif;
-	font-size: 0.9em;
+	font-size: 1em;
 }
 
 /*MAYBE TO DELETE*/
@@ -162,9 +167,9 @@ div#resume, div#contactLink{
 	position: absolute;
 }
 
-div#resume{
+/*div#resume{
 	left:15%;
-}
+}*/
 
 /*div#contactLink{
 	right: 15%;
@@ -207,20 +212,49 @@ div#mainBlurb span#skillsBlurb{
 }
 
 /*PORTFOLIO*/
-#portfolioContent h2.projectTitle{
+
+/*introBanner Section*/
+div#introBanner.container{
+	padding: 0;
+	margin:0;
+	width: 100%;
+	background-color: #949c9e;
+}
+
+#introBanner section{
+	display: block;
+	width: 80%;
+	text-align: center;
+	margin: auto;
+	font-family: "Roboto"
+}
+
+#introBanner h2.projectTitle{
 	font-family: "Pier";
 	font-size: 4em;
 	margin-bottom: 0;
+	margin-top: .8em;
+	color: #ffffff;
 }
 
-#intro img{
-	display: inline;
-	width: 300px;
-	height: auto;
-	margin-top: 20px;
-	margin-bottom: 30px;
+#introBanner p.projectTagline{
+	margin-bottom: 2em;
+	color: #2b323b;
+	font-style: italic;
+	font-family: "Roboto";
+	font-size: 1.1em;
 }
 
+#introBanner p:last-child{
+	font-size: 1.3em;
+	font-family: "Roboto-light";
+	color: #F3F5F6;
+	width: 80%;
+	margin: auto;
+	margin-bottom: 1.7em;
+}
+
+/*main portfolio section*/
 h3.projHeading{
 	font-family: "Roboto";
 	font-size: 2em;
@@ -235,31 +269,58 @@ h3.projHeading{
 	font-family: 'Roboto';
 	font-size: 1.1em;
 	max-width: 750px;
-	margin: 0, auto;
+	line-height: 200%;
 }
 
-#portfolioContent p.projectTagline{
-	margin-bottom: 3em;
+#portfolioContent div#intro p{
 	font-style: italic;
 }
 
-#portfolioContent div#intro p:first-child{
-	font-size: 1.3em;
+#intro img{
+	display: inline;
+	width: 300px;
+	height: auto;
+	margin-top: 20px;
+	margin-bottom: 30px;
 }
 
-#portfolioContent div#intro p:last-child{
-	font-style: italic;
+#intro p#projDescription{
+	line-height: 130%;
+}
 }
 
 section#keyFindings{
 	margin-top: 2em;
+	margin-bottom: 2em;
 }
 
 #keyFindings li{
 	display: inline-block;
 	text-align: left;
 	width: 65%;
-	margin: 0, auto;
+	margin-bottom: 1.5em;
+}
+
+#keyFindings li:last-child{
+	margin-bottom: 0;
+}
+
+img#storyboard{
+	margin: 2em 0;
+}
+
+div.MVPstage h4{
+	margin-top: 2em;
+}
+
+div.MVPstage p{
+	width: 80%;
+	margin-bottom: 1em;
+}
+
+img#features{
+	display: block;
+	margin: auto;
 }
 
 img#screenflow{
@@ -271,7 +332,27 @@ img#screenflow{
 	opacity: .75;
 }
 
-h4#paperTestFindings{
+div#paperTestFindings h4{
+	margin-top: 2.5em;
+}
+
+div#paperTestFindings p{
+	width:65%;
+}
+
+img#homescreen, img#itemDetail, img#navigation, img#search, img#guides, img#newPost{
+	display: block;
+	margin: auto;
+}
+
+hr{
+	border-top: 2.5px solid #bebebe;
+	width: 80%;
+	margin: auto;
+	margin-top: 1em;
+}
+
+h4.screenTitle{
 	margin-top: 2em;
 }
 
