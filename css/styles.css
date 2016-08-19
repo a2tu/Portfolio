@@ -39,7 +39,8 @@ a.homeLink{
 }
 
 #mainMenu.nav.navbar-nav a{
-	color: #252B33;
+	color: #f55c3d;
+	/*color: #252B33;*/
 	font-family: "Pier";
 	font-size: 1.1em;
 	-webkit-transition: -webkit-transform;
@@ -102,14 +103,12 @@ footer.footer{
 	opacity: 1;
 }
 
-
 footer .footerCR{
 	font-size: 0.8em;
 	font-family: 'Roboto', sans-serif;
 }
 
 /*MAIN CONTENT*/
-
 body .container{
 	padding-right: 10%;
 	padding-left: 10%;
@@ -119,9 +118,10 @@ section.row{
 	left: auto;
 }
 
-h1{
+h1#nameTitle{
 	font-family: "Pier";
 	font-size: 3.5em;
+	letter-spacing: 7px;
 	margin-top: 20px;
 	margin-bottom: 0;
 	color: #252B33;
@@ -132,12 +132,60 @@ h1{
 	font-size: 1em;
 }
 
+a{
+	color: #f55c3d;
+	font-family: "Roboto";
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+	color:#c2290a;
+}
+
+p{
+	margin-bottom: 1.5em;
+}
+
+blockquote{
+	font-family: "Roboto-light";
+	color:#4b5768;
+	border-left: none;
+	font-size: 1.5em;
+	font-style: italic;
+	width: 85%;
+	margin: 1em auto;
+	quotes: "“" "”";
+}
+
+blockquote::before{
+	color: #ccc;
+	content: open-quote;
+	font-size: 2.5em;
+	line-height: 0.1em;
+	margin-right: 0.5em;
+	vertical-align: -0.3em;
+}
+
+blockquote::after{
+	color: #ccc;
+	content: close-quote;
+	font-size: 2.5em;
+	line-height: 0.1em;
+	margin-left: 0.5em;
+	vertical-align: -0.3em;
+}
+
+li{
+	font-family: "Roboto";
+}
+
 /*MAYBE TO DELETE*/
 h2.pageTitle{
 	font-size: 2.8em;
 	margin-bottom: 30px;
 	height: 70px;
-	line-height: 70px;
+	line-height: 70px
 }
 
 .divider{
@@ -167,13 +215,9 @@ div#resume, div#contactLink{
 	position: absolute;
 }
 
-/*div#resume{
-	left:15%;
-}*/
-
-/*div#contactLink{
-	right: 15%;
-}*/
+img#profileImg{
+	margin-top: 20px;
+}
 
 div#mainBlurb{
 	font-family: 'Roboto', sans-serif;
@@ -184,31 +228,28 @@ div#mainBlurb{
 	padding-left:0;
 }
 
-div#mainBlurb>span{
+div#mainBlurb>p{
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.2em;
-	font-weight: bold;
-}
-
-div#mainBlurb span#quirkBlurb{
-	display: inline-block;
-	margin-top:20px;
 	font-size: 1em;
-	font-weight: normal;
 }
 
-div#mainBlurb span#closingBlurb{
-	display: inline-block;
-	margin-top:20px;
-	font-size: 1em;
-	font-weight: normal;
+div#mainBlurb p:nth-child(2){
+	margin-top:25px;
 }
 
-div#mainBlurb span#skillsBlurb{
+div#mainBlurb p#skillsBlurb{
 	display: inline-block;
 	margin-top: 40px;
 	font-size: 0.9em;
 	font-weight: normal;
+}
+
+div#mainBlurb p#resume{
+	font-size: 0.9em;
+}
+
+div#mainBlurb p#resume a{
+	font-size: 1.05em;
 }
 
 /*PORTFOLIO*/
@@ -276,6 +317,12 @@ h3.projHeading{
 	font-style: italic;
 }
 
+#portfolioContent h4{
+	font-family: "Roboto";
+	font-size: 1.25em;
+	margin-bottom: 20px;
+}
+
 #intro img{
 	display: inline;
 	width: 300px;
@@ -340,6 +387,24 @@ div#paperTestFindings p{
 	width:65%;
 }
 
+section#prototypeChanges{
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+#prototypeChanges li{
+	display: inline-block;
+	text-align: left;
+	width: 65%;
+	margin-bottom: 1.5em;
+}
+
+#prototypeChanges li:nth-child(even){
+	color: #4b5768;
+	margin-top: -15px;
+}
+
+
 img#homescreen, img#itemDetail, img#navigation, img#search, img#guides, img#newPost{
 	display: block;
 	margin: auto;
@@ -358,10 +423,10 @@ h4.screenTitle{
 
 /*GALLERY IMAGES*/
 
-#galleryBlurb{
+p#galleryBlurb{
 	margin-top: 20px;
 	font-family: "Roboto";
-	font-size: 0.9em;
+	font-size: 1em;
 }
 
 section#galleryTiles{
@@ -464,5 +529,9 @@ div.imgTile{
 	div#mainBlurb{
 		max-width: 300px;
 		margin-right: 0;
+	}
+	p#galleryBlurb{
+		max-width: 300px;
+		margin: auto;
 	}
 }
