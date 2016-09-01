@@ -42,6 +42,7 @@ a.homeLink{
 	color: #f55c3d;
 	/*color: #252B33;*/
 	font-family: "Pier";
+	/*font-family: 'Karla', sans-serif;*/
 	font-size: 1.1em;
 	-webkit-transition: -webkit-transform;
 	-moz-transition: -moz-transform;
@@ -147,7 +148,7 @@ h1#nameTitle{
 	letter-spacing: 7px;
 	margin-top: 20px;
 	margin-bottom: 0;
-	color: #252B33;
+	color: #333;
 }
 
 #jobTitle{
@@ -171,11 +172,13 @@ p{
 }
 
 blockquote{
-	font-family: "Roboto-light";
-	color:#4b5768;
+	/*font-family: "Roboto-light";*/
+	/*font-style: italic;*/
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+	color:#174785;
 	border-left: none;
 	font-size: 1.5em;
-	font-style: italic;
 	width: 85%;
 	margin: 1em auto;
 	quotes: "\201C""\201D";
@@ -207,22 +210,11 @@ li{
 	font-family: "Roboto";
 }
 
-/*MAYBE TO DELETE*/
-/*h2.pageTitle{
-	font-size: 2.8em;
-	margin-bottom: 30px;
-	height: 70px;
-	line-height: 70px
-}*/
 
 .divider{
 	width: 4px;
 	height: auto;
 	display: inline-block;
-}
-
-#contactLink a{
-	text-decoration: none;
 }
 
 /*ABOUT*/
@@ -235,11 +227,6 @@ li{
 	display: inline-block;
 	width: 80%;
 	margin: 0, auto;
-}
-
-div#resume, div#contactLink{
-	display: inline-block;
-	position: absolute;
 }
 
 img#profileImg{
@@ -257,6 +244,7 @@ div#mainBlurb{
 
 div#mainBlurb>p{
 	font-family: 'Roboto', sans-serif;
+	/*font-family: 'Karla', sans-serif;*/
 	font-size: 1em;
 }
 
@@ -324,9 +312,9 @@ div#introBanner.container{
 
 /*main portfolio section*/
 h3.projHeading{
-	font-family: "Roboto";
+	font-family: 'Karla', sans-serif;
 	font-size: 2em;
-	font-weight: bold;
+	color: #2B323B;
 	margin-top: 2em;
 	margin-bottom: 1em;
 }
@@ -342,6 +330,10 @@ h3.projHeading{
 
 #portfolioContent div#intro p{
 	font-style: italic;
+}
+
+section#userQuotes{
+	margin-bottom: 3em;
 }
 
 #portfolioContent h4{
@@ -427,7 +419,7 @@ section#prototypeChanges{
 }
 
 #prototypeChanges li:nth-child(even){
-	color: #4b5768;
+	color: #174785;
 	margin-top: -15px;
 }
 
