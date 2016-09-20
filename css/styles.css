@@ -81,6 +81,10 @@ footer.footer{
 	padding: 0 25px 0 0;
 }*/
 
+p.footerLinks{
+	margin-bottom: .7em; 
+}
+
 .footerLinks>a{
 	position: relative;
 	font-size: 1.1em;
