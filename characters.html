@@ -4,25 +4,29 @@
 	<meta charset=“utf-8”>
 	<meta http-equiv=“X-UA-Compatible” content=“IE=edge”>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Alice Tu - Home</title>
+	<title>Portfolio - Cast of Characters</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/styles.css"/>
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300italic' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css"/>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 	<script src="https://use.fontawesome.com/22231013e6.js"></script>
 </head>
+
 
 <body>
 	<header>
 		<nav class="navbar navbar-default navbar-static-top">
 			<div id="topNav" class="container">
-				<a class="homeLink" href="#">
+				<a class="homeLink" href="index.html">
 					<h1 id="nameTitle" class="pageTitle text-center">alice tu</h1>
 				</a>
 				<p id="jobTitle">UX Designer, Oakland</p>
 				<ul id="mainMenu" class="nav navbar-nav">
-					<li id="menuHome"><a href="index.html" class="text-uppercase active">about<span class="sr-only">(current)</span></a></li>
-					<li id="menuPortfolio"><a href="portfolio.html" class="text-uppercase">projects</a></li>
+					<li id="menuHome"><a href="index.html" class="text-uppercase">about</a></li>
+					<!-- <li id="menuAbout"><a href="about.html">About</a></li> -->
+					<li id="menuPortfolio"><a href="portfolio.html" class="text-uppercase active">projects<span class="sr-only">(current)</span></a></li>
 					<li id="menuGallery"><a href="gallery.html" class="text-uppercase">gallery</a></li>
 				</ul>
 			</div>
@@ -30,31 +34,32 @@
 	</header>
 
 
-	<div id="main-content" class="container">
-		<section id="aboutContent" class="row">
-			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12">
-				<img id="profileImg" src="img/profile3.jpg" alt="Alice Tu profile image" class="img-responsive img-circle">
-			</div>
-			<!-- <br>Formerly: Chef, Operations, HR, Finance</div> -->
-			<div id="mainBlurb" class="col-lg-6 col-md-6 col-sm-6 col-xs-6 col-xxs-12 text-left">
-			
-				<p>Hello! I am a UX Designer living and working in the Bay Area. Previously I was the chef at an Educational Technology startup in San Francisco where I created and managed the in-house food program. I also ran the operations department for the company at the same time.</p>
-				<!-- <p>I love to surf.</p> -->
-				<p>Thanks for stopping by.</p>
+	<div id="introBanner" class="container">
+		<section class="row">
+			<h2 class="projectTitle" id="travelApp">Cast of Characters</h2>
+			<p class="projectTagline">Working with masks and vectors</p>
 
-				<p id="skillsBlurb">HTML, CSS, and dabbles in Javascript and Python</span>
-
-				<p id="resume">View my resume
-					<a href="assets/AliceTu_resume.pdf" target="_blank">here</a>. 
-				</p>
-			</div>
-
+			<p>Meet some oddballs.</p>
 		</section>
 	</div>
 
 
+	<div id="main-content" class="container">
+		<section id="portfolioContent" class="row">
+			<div id="characterImages">
+				<img class="img-responsive" src="assets/characters/stampi_550.png" alt="Purple circular monster, 550px">
+
+				<img class="img-responsive" src="assets/characters/sockmonster_550.png" alt="Rainbow sock monster, face, 550px">
+
+				<img class="img-responsive" src="assets/characters/hobbes_550.png" alt="Hobbes the tiger, head, 550px">
+
+				<img class="img-responsive" src="assets/characters/sockadille_550.png" alt="Striped sock crocodile, 550px">
+		</section>
+	</div>
+
 	<footer class="footer">
 		<div class="container text-center">
+
 			<p class="footerLinks">
 				<a href="http://www.linkedin.com/in/alice-tu" target="_blank">
 					<i class="fa fa-linkedin" aria-hidden="true"></i></a>
@@ -72,6 +77,7 @@
 	</footer>
 
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 </body>

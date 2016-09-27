@@ -272,8 +272,67 @@ div#mainBlurb p#resume a{
 }
 
 /*PORTFOLIO*/
+.projectBanner{
+	min-height: 300px;
+	color: #fff;
+	margin-top: .5em;
+}
 
-/*introBanner Section*/
+.projectBanner img{
+	display: inline;
+	margin-bottom: 20px;
+	margin-left: 1em;
+}
+
+#characters img{
+	width: 180px;
+	height: auto;
+}
+
+.projectBanner p{
+	margin: 50px 0 75px 0;
+	font-family: 'Roboto-light';
+	letter-spacing: 1.1px;
+	font-size: 1.2em;
+}
+
+h2.projectName{
+	margin: 50px 0 20px 0;
+	font-size: 2em;
+}
+
+#snapguide{
+	/*background-color: rgba(212, 133, 61, .9);*/
+	background-color: rgba(0, 0, 0, .38)
+	/*border-top: 2px solid black;
+	border-bottom: 2px solid black;*/
+}
+
+#characters{
+	background-color: rgba(108, 190, 228, 1);
+
+}
+
+.button{
+	display: inline-block;
+	border: 3px solid #fff;
+	padding: 1em 1.75em;
+	margin-bottom: 20px;
+	background: none;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1.1px;
+	transition: .6s;
+}
+
+.button:hover{
+	background-color: #fff;
+	color:#252B33;
+	transition: .6s;
+}
+
+
+/*Portfolio - introBanner Section*/
 div#introBanner.container{
 	padding: 0;
 	margin:0;
@@ -314,7 +373,7 @@ div#introBanner.container{
 	margin-bottom: 1.7em;
 }
 
-/*main portfolio section*/
+/*portfolio main section - SnapGuide*/
 h3.projHeading{
 	font-family: 'Karla', sans-serif;
 	font-size: 2em;
@@ -444,6 +503,15 @@ h4.screenTitle{
 	margin-top: 2em;
 }
 
+/*portolio - characters*/
+#characterImages>img{
+	/*display: inline;*/
+	width: 350px;
+	height: auto;
+	margin: 2em auto;
+}
+
+
 /*GALLERY IMAGES*/
 
 p#galleryBlurb{
@@ -537,6 +605,10 @@ div.imgTile{
 		width: 60%;
 		margin: 15px auto;
 	}
+
+	.projectBanner div.container{
+		padding-left: 18%;
+	}
 }
 
 @media (max-width: 696px){
@@ -565,6 +637,10 @@ div.imgTile{
 		/*padding-left: 5px;*/
 	}
 
+	.col-xxxs-12{
+		width: 100%;
+	}
+
 	img#profileImg{
 		margin-bottom: 1em;
 	}
@@ -572,30 +648,24 @@ div.imgTile{
 	div#introBanner.container{
 		margin-bottom: 1em;
 	}
-
 	#introBanner h2.projectTitle{
 		font-size:2.8em;
 	}
-
 	#portfolioContent h3.projHeading{
 		font-size: 1.75em;
 		margin-left: 6%;
 		margin-right: 6%;
 	}
-
 	#portfolioContent p{
 		max-width: 300px;
 	}
-
 	#portfolioContent p#projDescription{
 		margin-top:1em;
 	}
-
 	#portfolioContent img{
 		max-width: 90%;
 		margin: auto;
 	}
-
 	div#mainBlurb{
 		max-width: 300px;
 		margin-right: 0;
@@ -603,5 +673,22 @@ div.imgTile{
 	p#galleryBlurb{
 		max-width: 300px;
 		margin: auto;
+	}
+
+	.projectBanner div.container{
+		padding-left: 12%;
+	}
+
+	#characterImages>img{
+		margin-top: 1em;
+	}
+
+	.projectBanner p{
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	.button{
+		margin-bottom: 30px;
 	}
 }
