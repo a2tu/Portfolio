@@ -8,7 +8,6 @@
 	border: none;
 	font-size: 16px;
 	font-family: 'Pier';
-	/*font-family: 'Roboto', sans-serif;*/
 }
 
 /*NAV MENU*/
@@ -162,7 +161,7 @@ h1#nameTitle{
 
 a{
 	color: #f55c3d;
-	font-family: "Roboto";
+	font-family: 'Roboto', sans-serif;
 	text-decoration: none;
 }
 
@@ -176,8 +175,6 @@ p{
 }
 
 blockquote{
-	/*font-family: "Roboto-light";*/
-	/*font-style: italic;*/
 	font-family: 'Roboto Slab', serif;
 	font-weight: 300;
 	color:#174785;
@@ -211,7 +208,7 @@ ul{
 }
 
 li{
-	font-family: "Roboto";
+	font-family: 'Roboto', sans-serif;
 }
 
 
@@ -291,7 +288,8 @@ div#mainBlurb p#resume a{
 
 .projectBanner p{
 	margin: 50px 0 75px 0;
-	font-family: 'Roboto-light';
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
 	letter-spacing: 1.1px;
 	font-size: 1.2em;
 }
@@ -345,7 +343,6 @@ div#introBanner.container{
 	width: 80%;
 	text-align: center;
 	margin: auto;
-	font-family: "Roboto"
 }
 
 #introBanner h2.projectTitle{
@@ -360,13 +357,14 @@ div#introBanner.container{
 	margin-bottom: 2em;
 	color: #2b323b;
 	font-style: italic;
-	font-family: "Roboto";
+	font-family: 'Roboto', sans-serif;
 	font-size: 1.1em;
 }
 
 #introBanner p:last-child{
 	font-size: 1.3em;
-	font-family: "Roboto-light";
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
 	color: #F3F5F6;
 	width: 80%;
 	margin: auto;
@@ -385,7 +383,7 @@ h3.projHeading{
 #portfolioContent p{
 	display: inline-block;
 	text-align: left;
-	font-family: 'Roboto';
+	font-family: 'Roboto', sans-serif;
 	font-size: 1.1em;
 	max-width: 750px;
 	line-height: 200%;
@@ -400,7 +398,7 @@ section#userQuotes{
 }
 
 #portfolioContent h4{
-	font-family: "Roboto";
+	font-family: 'Roboto', sans-serif;
 	font-size: 1.25em;
 	margin-bottom: 20px;
 }
@@ -516,7 +514,7 @@ h4.screenTitle{
 
 p#galleryBlurb{
 	margin-top: 20px;
-	font-family: "Roboto";
+	font-family: 'Roboto', sans-serif;
 	font-size: 1em;
 }
 
