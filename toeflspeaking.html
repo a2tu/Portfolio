@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset=“utf-8”>
+	<meta http-equiv=“X-UA-Compatible” content=“IE=edge”>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio - TOEFL Speaking App</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300italic' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css"/>
+	<link rel="shortcut icon" type="image/png" href="/favicon.png">
+	<script src="https://use.fontawesome.com/22231013e6.js"></script>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-default navbar-static-top">
+			<div id="topNav" class="container">
+				<a class="homeLink" href="index.html">
+					<h1 id="nameTitle" class="pageTitle text-center">alice tu</h1>
+				</a>
+				<p id="jobTitle">UX Designer, Oakland</p>
+				<ul id="mainMenu" class="nav navbar-nav">
+					<li id="menuHome"><a href="index.html" class="text-uppercase">about</a></li>
+					<!-- <li id="menuAbout"><a href="about.html">About</a></li> -->
+					<li id="menuPortfolio"><a href="portfolio.html" class="text-uppercase active">projects<span class="sr-only">(current)</span></a></li>
+					<li id="menuGallery"><a href="gallery.html" class="text-uppercase">gallery</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+
+	<div id="introBanner" class="container">
+		<section class="row">
+			<div id="allProjects"><a href="/projects">&#60;&#60; Back to all projects</a></div>
+			<h2 class="projectTitle" id="travelApp">TOEFL Speaking App</h2>
+			<p class="projectTagline">Conquer one of the most intimidating parts of the TOEFL exam.</p>
+
+			<p>A majority of TOEFL studiers struggle with the speaking portion of the exam more than any other section. We set out to create an accessible tool for students.</p>
+		</section>
+	</div>
+
+	<div id="main-content" class="container">
+		<section id="portfolioContent" class="row">
+			<div id="intro">
+				<img class="img-responsive centerImg" src="assets/toeflspeaking/toefl_speaking_promo.png" alt="TOEFL speaking app promotion">
+
+				<p id="projDescription">The Magoosh TOEFL Speaking app brings together speaking practice, familiarity with the exam format, and sample responses in a simple yet effective tool.</p>
+			</div>
+
+			<h3 class="text-uppercase projHeading">our goal</h3> 
+				<p>Create a lead-generation mobile app that ranks #1 on Android and iOS for keyword &#34;TOEFL Speaking&#34;.</p>
+
+
+
+				<p>See the app in action on
+					<a href="https://play.google.com/store/apps/details?id=com.magoosh.toefl.speaking&hl=en" target="_blank">Google Play</a>
+					or
+					<a href="https://itunes.apple.com/us/app/magoosh-toefl-speaking-and-english-learning/id1238420710?mt=8" target="_blank">Apple Appstore</a>.
+				</p>
+
+				<p>&#42; Within 3 months of launch, we achieved our goal of replacing the previous top ranked apps in both Google Play and Apple stores for the keyword “TOEFL Speaking”.</p>
+				<p>&#42; This app has maintained over a 4.5 star rating in both Google Play and Apple app stores since its launch in June 2017.</p>
+
+			<h3 id="myRole" class="text-uppercase projHeading">my role</h3> 
+				<p >I worked on the UX/UI for this project and also helped prioritize features to build. I additionally created promotional assets for launch. I worked with product manager, Sam Ju, and engineer, Zack Mayeda. </p>
+
+
+			<div id="projIntro">
+				<h3 class="text-uppercase projHeading">background</h3>
+					<p>During this quarter of work, one of our company goals was to increase the top-of-funnel for our TOEFL product. This project began as an effort to address this goal.</p> 
+					<p>We learned in user interviews that TOEFL students struggle most with the Speaking section of the exam, but they also lacked good tools to practice and improve their English speaking. We set out to meet this need by developing a mobile TOEFL speaking product for our students and other TOEFL studiers. </p>
+
+				<h3 class="text-uppercase projHeading">our approach to conquering the space</h3>
+					<p>At the start of this project, one of our primary objectives was to differentiate our product from competitors with a value-add feature or feature set. Nearly all the existing products in this space provided the same features: follow a prompt, record yourself, play-back your recording, review a sample answer (text or audio), and receive general feedback on how to improve your response.</p>
+					<p>We wanted to introduce more personalized feedback in the form of automated speech recognition or human feedback. We believed that this would help us rise above existing competitors and give us an additional lift from satisfied users telling their friends.</p>
+
+					<section id="">
+						<h4>Provide instant speaking feedback using a speech recognition API</h4>
+						<ul>
+							<li>We ran a lightweight experiment with <a href="https://cloud.google.com/speech/" target="_blank">Google’s speech recognition API</a> to test interest in this feature. We sent students an email with instructions to read a given prompt into Google’s API and review the results. This feedback type was intended to address issues with pronunciation, which students cited as a key challenge. </li>
+							<li><strong>PRO:</strong> This technology would be costly to implement, and this was a cheap way to test whether students understood and valued the interaction.</li>
+							<li><strong>CON:</strong> This was an incredibly clunky and friction-filled experience.</li>
+						</ul>
+						<p>&#42; Although students expressed excitement for this idea during user testing, the technical ability of the API to recognize long, spoken passages was inadequate to be actually useful.</p>
+
+						<h4>Provide human speaking feedback</h4>
+						<ul>
+							<li><strong>PRO:</strong> We have a built-in team of tutors available to test this with minimal cost. Human feedback is accurate.</li>
+							<li><strong>CON:</strong> This proved incredibly costly and too difficult to scale for a non-paying audience at this time. There was also a long response time for students to receive feedback.</li>
+						</ul>
+						<p>&#42; For this idea, we learned that students valued instant feedback over the thoroughness and accuracy of a human grader.</p>
+					</section>
+			</div>
+
+			<div id="projContent">
+				<h3 class="text-uppercase projHeading">where we ended up</h3>
+					<p>Ultimately we landed on creating a more user-friendly version of the features that were available in the market. We would compete with existing apps through the strength of our content, and we would make the interface simple and enjoyable to use.</p>
+
+					<img class="centerImg img-responsive" src="assets/toeflspeaking/toefl_speaking_flow.png" alt="TOEFL speaking app user flow">
+
+					<h4>Key features</h4>
+					<img class="centerImg img-responsive" src="assets/toeflspeaking/study_schedule_annotated.png" alt="TOEFL speaking screens annotated">
+
+					<div class="list-text-left">
+						<p><img class="icon-pin1" src="assets/toeflspeaking/pin-1.svg" onerror="this.src='assets/toeflspeaking/pin-1.png'"/>Prompts for the 3 TOEFL Speaking sections</p>
+						</br>
+						<p><img class="icon-pin2" src="assets/toeflspeaking/pin-2.svg" onerror="this.src='assets/toeflspeaking/pin-2.png'"/>Record a response to the prompt</p>
+						</br>
+						<p><img class="icon-pin3" src="assets/toeflspeaking/pin-3.svg" onerror="this.src='assets/toeflspeaking/pin-3.png'"/>A countdown timer</p>
+						</br>
+						<p><img class="icon-pin4" src="assets/toeflspeaking/pin-4.svg" onerror="this.src='assets/toeflspeaking/pin-4.png'"/>Play back the response</p>
+						</br>
+						<p><img class="icon-pin5" src="assets/toeflspeaking/pin-5.svg" onerror="this.src='assets/toeflspeaking/pin-5.png'"/>Re-record a response</p>
+						</br>
+						<p><img class="icon-pin6" src="assets/toeflspeaking/pin-6.svg" onerror="this.src='assets/toeflspeaking/pin-6.png'"/>Listen to a sample response and strategies to improve</p>
+					</div>
+
+				<h3 class="text-uppercase projHeading">something extra</h3>
+					<p>The TOEFL Speaking exam has very specific time allocations for every step of the flow. One of my favorite features in the app is a color bar that tells students which part of the prompt they’re currently on. The color bar automatically moves to the next step of the prompt once the time for the current step is finished.</p>
+
+					<img class="phonetrio border img-responsive" src="assets/toeflspeaking/prompt_step1.png" alt="Toefl speaking prompt step 1">
+					<img class="phonetrio border img-responsive" src="assets/toeflspeaking/prompt_step2.png" alt="Toefl speaking prompt step 2">
+					<img class="phonetrio border img-responsive" src="assets/toeflspeaking/prompt_step3.png" alt="3">
+
+					<p>Since this tool was meant to help students practice the TOEFL Speaking exam rather than replicate it exactly, I designed the prompt screen to show all steps of the prompt at once. This way students are able to familiarize themselves with the test format and question types by seeing what step they are in during the answering process.</p>
+
+				<h3 class="text-uppercase projHeading">learnings</h3>
+					<p>We were able to take over the top spot for "TOEFL speaking" in both Android and iOS stores by creating a more user-friendly app with a very similar feature set to what was already out there. However, reaching #1 for keyword “TOEFL Speaking” did not translate into the high number of downloads we were aiming for. This was due to our decision to forego building out a value-add feature that would differentiate us from competitors. As a result we couldn't capitalize on the word-of-mouth multiplier that was built into our impact model.</p>
+
+			</div>
+
+		</section>
+	</div>
+
+
+	<div>
+		<a href="#" class="go-top hidden-xs">
+			<i class="fa fa-chevron-up" aria-hidden="true"></i>
+		</a>
+	</div>
+
+	<footer class="footer">
+		<div class="container text-center">
+
+			<p class="footerLinks">
+				<a href="http://www.linkedin.com/in/alice-tu" target="_blank">
+					<i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				<a href="https://github.com/a2tu/" target="_blank">
+					<i class="fa fa-github" aria-hidden="true"></i></a>
+				<!-- <a href="#">Dribble</a> -->
+				<a href="https://www.instagram.com/alice_tu/" target="_blank">
+					<i class="fa fa-instagram" aria-hidden="true"></i></a>
+				<a href="mailto:alicetu@gmail.com?Subject="Hello%20from%20Website">
+					<i class="fa fa-envelope" aria-hidden="true"></i></a>
+			</p>
+
+			<p class="footerCR">Content &amp; Design &copy; Alice Tu 2016</p>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+<!-- back to top scroll bar -->
+	<script>
+		$(document).ready(function(){
+			// show or hide sticky footer button
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 800){
+					// show button
+					$('.go-top').fadeIn(350);
+				}
+				else{
+					$('.go-top').fadeOut(250);
+				}
+			});
+
+			// animate scroll to top
+			$('.go-top').click(function(event){
+				event.preventDefault();
+
+				$('html, body').animate({scrollTop: 0}, 300);
+			})
+		});
+	</script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</body>
+</html> 
