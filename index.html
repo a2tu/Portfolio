@@ -17,52 +17,81 @@
   <div class="hero">
     <div class="intro-text">
       <h1>Hi, I'm Alice.</h1>
-      <h2>I'm a <a href="https://www.linkedin.com/in/alice-tu/" target="_blank">product designer</a> at <a href="https://magoosh.com/" target="_blank">Magoosh</a>.<br> I love jigsaw puzzles and a foggy morning on the <a href="https://www.instagram.com/p/BkdN6dul55h/" target="_blank">ocean</a>.</h2>
+      <h2>I'm a <a href="https://www.linkedin.com/in/alice-tu/" target="_blank">product designer</a> at <a href="https://www.chorus.ai/" target="_blank">Chorus.ai</a>.<br> I love jigsaw puzzles and a foggy morning on the <a href="https://www.instagram.com/p/BkdN6dul55h/" target="_blank">ocean</a>.</h2>
     </div>
     <div class="profile-image">
-      <img alt="profile" class="rounded-circle" src="images/profile_200.png">
+    	<img src="images/profile-outlined.png">
+      <!-- <img alt="profile" class="rounded-circle" src="images/profile_200.png"> -->
     </div>
   </div>
 
 
   <div class="skills skills-image">
     <div class="skills-content">
-      <div class="skills-item-left"id="ed_tech_icon">
-        <img alt="profile" class="rounded" src="images/ed_tech_icon.png" width="300">
-      </div>
-      <div class="skills-item-right">
-        <img alt="profile" class="rounded" src="images/strategy_icon.png" width="300">
-      </div>
-
-      <div class="skills-item-left">
-        <img alt="profile" class="rounded" src="images/communicate_icon.png" width="300">
-      </div>
-      <div class="skills-item-right">
-        <img alt="profile" class="rounded" src="images/awareness_icon.png" width="300">
-      </div>
+    	<div class="skills-icon-left">
+    		<img alt="magnifying glass user" src="images/user_research.png" width="100">
+    	</div>
+    	<div class="skills-description-right">
+    		<h4>User Research</h4>
+    		<p>I develop a deep understanding of users through methods including interviews, surveys, usability testing, and data analysis</p>
+    	</div>
+    	<div class="skills-icon-left">
+    		<img alt="lightbulb bullseye" src="images/strategy.png" width="100">
+    	</div>
+    	<div class="skills-description-right">
+    		<h4>Strategy &#38; Execution</h4>
+    		<p>I bring a focus on users and usability challenges to roadmap planning, and I also execute on designs from concept to handoff</p>
+    	</div>
+    	<div class="skills-icon-left">
+    		<img alt="bubbles talking ellipses" src="images/collab_icon.png" width="100">
+    	</div>
+    	<div class="skills-description-right">
+    		<h4>Team Operations</h4>
+    		<p>I recognize gaps that limit a design team and fill them by adjusting our processes, tools, and communication</p>
+    	</div>
+    	<div class="skills-icon-left">
+    		<img alt="sprouting plant" src="images/startup.png" width="100">
+    	</div>
+    	<div class="skills-description-right">
+    		<h4>Startups</h4>
+    		<p>I promote design objectives within an adapting environment to achieve user and product goals</p>
+    	</div>
     </div>
   </div>
   
-  
-  <div class="work">
-    <div class="work-section">
+
+  <div id="projects" class="work">
+  	<div class="work-section">
       <div class="work-content">
-      	<h3 class="work-title">Turning "I'm bored" into active learning</h3>
-      	<div class="work-underline orange-theme"></div>
-        <p class="work-description">I helped  high school students get more out of course lessons by adding in illustrative activities and immediate feedback.</p>
-        <a class="orange-text" href="./project_lesson.html">Read about this project</a>
+      	<h3 class="work-title">Simplify analytics for busy sales leaders</h3>
+      	<div class="work-underline theme-chorus"></div>
+        <p class="work-description">I helped managers and leaders quickly understand performance metrics for their team and connect behaviors to sales outcomes.</p>
+        <a class="project-chorus" href="#" onclick="key()">Enter password to view</a>
       </div>
       <div class="work-image">
-        <img src="images/lessons_experience_home.png" width="700px">
+        <img src="images/analytics_home.png" width="720px">
+      </div>
+    </div>
+
+  <div class="work">
+  	<div class="work-section">
+      <div class="work-content">
+      	<h3 class="work-title">Define permissions &#38; access control for enterprise customers</h3>
+      	<div class="work-underline theme-chorus"></div>
+        <p class="work-description">I introduced settings for data privacy and organizational management which supported our upmarket strategy. </p>
+        <a class="project-chorus" href="#" onclick="key2()">Enter password to view</a>
+      </div>
+      <div class="work-image">
+        <img src="images/permissions_home.png" width="720px">
       </div>
     </div>
 
     <div class="work-section">
       <div class="work-content">
-      	<h3 class="work-title">Giving guidance in an unclear dashboard</h3>
-      	<div class="work-underline blue-theme"></div>
+      	<h3 class="work-title">Give guidance in an unclear dashboard</h3>
+      	<div class="work-underline theme-magoosh"></div>
         <p class="work-description">I increased engagement by reminding high schoolers to study and by pointing them in the right direction when they got started.</p>
-        <a class="blue-text" href="./project_dashboard.html">Read about this project</a>
+        <a class="project-magoosh" href="./project_dashboard.html">Read more</a>
       </div>
       <div class="work-image">
         <img src="images/dashboard_redesign_home.png" width="675px">
@@ -71,10 +100,22 @@
 
     <div class="work-section">
       <div class="work-content">
-      	<h3 class="work-title">Creating a one-stop study resource</h3>
-      	<div class="work-underline green-theme"></div>
+      	<h3 class="work-title">Turn "I'm bored" into active learning</h3>
+      	<div class="work-underline theme-magoosh"></div>
+        <p class="work-description">I helped  high school students get more out of course lessons by adding in illustrative activities and immediate feedback.</p>
+        <a class="project-magoosh" href="./project_lesson.html">Read more</a>
+      </div>
+      <div class="work-image">
+        <img src="images/lessons_experience_home.png" width="700px">
+      </div>
+    </div>
+
+    <div class="work-section">
+      <div class="work-content">
+      	<h3 class="work-title">Create a one-stop study resource</h3>
+      	<div class="work-underline theme-magoosh"></div>
         <p class="work-description">I redesigned our popular GRE Prep  & Practice app and increased paid conversion.</p>
-        <a class="green-text" href="./project_prepapp.html">Read about this project</a>
+        <a class="project-magoosh" href="./project_prepapp.html">Read more</a>
       </div>
       <div class="work-image-mobile">
         <img src="images/GRE_prepapp_home.png" height="575px">
@@ -86,22 +127,61 @@
   <div class="footer">
     <div class="closing-text">
       <h1>Thanks for stopping by.</h1>
-      <h2>If anything here interests you, send me a note at <a class="link_intro" href="mailto:alicetu@gmail.com">alicetu(at)gmail.com</a>. I'd love to hear from you.</h2>
+      <h2>If you're interested in my work, send me a note at <a class="link_intro" href="mailto:alicetu@gmail.com">alicetu(at)gmail.com</a>. I'd be happy to hear from you.</h2>
     </div>
 
     <div class="footer-links">
-      <a class="link-social" href="images/AliceTu_resume2019.pdf" target="_blank">Resume</a>
+      <a class="link-social" href="images/AliceTuResume2021.pdf" target="_blank">Resume</a>
       <a class="link-social" href="https://www.linkedin.com/in/alice-tu/">LinkedIn</a>
       <a class="link-social" href="https://instagram.com/alice_tu/">Instagram</a>
     </div>
 
     <div class="copyright">
-      <p>Created by me in 2019.</p>
+      <p>Created by me in 2021</p>
     </div>
   </div>
 
 
 </div>
 
+<SCRIPT>
+  function key() {
+    var testV = 1;
+    var pass1 = prompt('Please Enter Project Password',' ');
+      while (testV < 3) {
+      if (!pass1)
+      history.go(-1);
+      if (pass1.toLowerCase() == "2apricots") {
+      window.open('./project_analytics.html', '_self');
+      break;
+  }
+  testV+=1;
+    var pass1 =
+    prompt('The Password is Incorrect. Please Try Again.','Enter Password');
+    }
+    if (pass1.toLowerCase()!="password" & testV ==3)
+    history.go(-1);
+    return " ";
+  }
+  function key2() {
+    var testV = 1;
+    var pass1 = prompt('Please Enter Project Password',' ');
+      while (testV < 3) {
+      if (!pass1)
+      history.go(-1);
+      if (pass1.toLowerCase() == "2apricots") {
+      window.open('./project_permissions.html', '_self');
+      break;
+  }
+  testV+=1;
+    var pass1 =
+    prompt('The Password is Incorrect. Please Try Again.','Enter Password');
+    }
+    if (pass1.toLowerCase()!="password" & testV ==3)
+    history.go(-1);
+    return " ";
+  }
+</SCRIPT>
 
 </body>
+</html>
