@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <title>Alice Tu</title>
+  <link href="CSS/styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500|Montserrat:300,400,500" rel="stylesheet">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="page-container">
+  
+  <header id="top">
+    <a class="button-resting" href="./index.html#projects">All projects</a>
+  </header>
+
+    <div class="hero hero-image">
+      <div class="hero-content">
+        <h2>Recognize themes in text analysis with AI support</h2>
+        <img src="images/project-text-analysis/project-text-analysis-hero.png">
+
+        <div class="hero-card-container">
+        <div class="hero-card">
+           <img src="images/remesh_logo.png">
+           <h4><a href="https://www.remesh.ai/" target="=_blank">Remesh.ai</a> fills a need for deep understanding of a group of people at a scale that is larger than typical qualitative research solutions.</h4>
+          <p>This project builds on top of the <a href="./remesh-data-viz.html">analysis foundation</a> of interactive data visuals and exports I designed. In this phase I investigate an unwieldy and incomplete text-analysis process. I respond with a hybrid solution of manual and AI tools to meet the need for recognizing themes from a body of text.</p>
+          <p>My team and I partnered with our data science experts and consider the latest technologies available to us. We learned that these technologies were not necessarily embraced by researchers across the research industry, however AI tools can still deliver a certain benefit.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="case-study">
+
+      <div class="case-study-container">
+        <div class="case-study-section">
+          <h3 class="case-study-section-title">Problem</h3>
+          <h4 class="case-study-sub-text">Researchers struggle to make sense of open-ended responses collected on Remesh</h4>
+          <p>Research teams choose Remesh to fill a need for in-depth qualitative understanding from a large sample of their target audience. Since responses are being collected from many individuals, the number of responses to analyze also swell beyond standard qualitative methods.</p>
+
+          <div class="case-study-sub-section">
+            <h4>Open-ended data takes longer to analyze than closed-ended data</h4>
+            <p>Open-ended text responses allow participants to provide their unbiased and unprompted responses to a question. These responses give researchers rich information but are also highly labor-intensive to analyze compared with predetermined options. However they do contain patterns and repeated themes which researchers are looking to catalogue and understand.</p>
+          </div>
+
+          <div class="case-study-sub-section">
+            <h4 class="case-study-sub-title">Text Analysis Workflow</h4>
+            <img src="images/project-text-analysis/text-analysis-workflow.png">
+            <h5>View the full <a href="./remesh-data-viz.html#research-workflow">research workflow here</a>.</h5>
+          </div>
+        </div>
+
+        <div class="case-study-section">
+          <h3 class="case-study-section-title">Objective</h3>
+          <h4 class="case-study-sub-text">How might we help researchers identify and assess themes from text responses?</h4>
+          <p>While we had tools for researchers to view common terms and also to understand how resonant responses were with other participants, these solutions were piecemeal and incomplete.</p>
+          <p>Summarizing responses semantically is a key step in text analysis. We didn't have a way for researchers to quickly understand what participants said, what was being repeated, and how often.</p>
+        </div>
+
+        <div class="case-study-section">
+          <h3 class="case-study-section-title">Solution</h3>
+            <p>Let's view our solution in context of the existing text analysis features: two tools called Common Topics and Highlights, both which relied on AI.</p>
+
+            <h4 class="case-study-sub-text">Two ends of a spectrum</h4>
+            <img src="images/project-text-analysis/solution-old.png">
+            <p>Highlights was particularly confusing for users. The intention was to organize responses into 10 groups that might be viewed as a proxy for themes. So far so good. But the method of organizing was unorthodox, based on participant voting behavior rather than on the meaning of responses. This surfaced a common issue of group duplicates which further eroded confidence in the tool.</p>
+            <p>On the other end of the spectrum, Common Topics were automatically determined through <a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf" target="_blank">tf-idf</a> calculations. While it was a good start, the algorithm was not tailored enough to prevent issues like duplicates for plurals or individually identifying topics that should have been presented under one topic. This solution was too granular and not yet intelligent enough to be viable.</p>
+          
+          <div class="case-study-sub-section">
+            <h4 class="case-study-sub-text">A blend of manual and AI tools</h4>
+              <p>We planned to level up both manual and automated tooling for users&#8212;fully manual solutions cut against our organizational positioning as an AI-driven product, while automated theming methods suffered from researcher skepticism.</p>
+              <img src="images/project-text-analysis/impact-effort.png">
+              <p><b>Our Solution</b></p>
+              <ul>
+                <li><b>Educate</b> - embed educational sign posts about AI tools within the platform and workflow</li>
+                <li><b>Refine Common Topics</b> - tailor the model to collapse plurals and obvious duplicates</li>
+                <li><b>Improve manual theme finding</b> - revisit how to present responses in context of other information, and to better utilize search and filtering tools</li>
+                <li><b>Automate themes by meaning</b> - integrate cluster analysis method to show groups based on responses that express similar meaning to one another</li>
+              </ul>
+              <!--
+                <h5>&#42; We developed this solution before we could use Open AI’s GPT service due to contractual agreements.</h5> -->
+            </div>
+
+          <div class="case-study-sub-section">
+            <h4 class="case-study-sub-title">Final Snapshot</h4>
+              <img src="images/project-text-analysis/solution-qual.png">
+              <img src="images/project-text-analysis/solution-qual-manual.png">
+              <img src="images/project-text-analysis/solution-qual-auto.png">
+          </div>
+        </div>
+
+        <div class="case-study-section">
+          <h3 class="case-study-section-title">Impact</h3>
+          <h4 class="case-study-sub-text">Heading in the right direction with more opportunity</h4>
+          <p>Researchers repeatedly spoke about the challenge of capturing subtleties in language accurately. A response may have been offered up satirically or in an earnest deadpan. Still, engagement with AI tools over manual ones demonstrates an interest in shortcutting historically all-manual methods.</p> 
+
+          <p>Opportunity remains to narrow the gap in meaningfully summarizing responses. As a start, sentiment labeling and thematic clusters have leveled up researcher capacity especially in the early stages of their analysis process.</p>
+          <p></p>
+          <img src="images/project-text-analysis/impact-table.png">
+          <h5>&#42; 4-month average measurement</h5>
+        </div>
+        <div class="case-study-section">
+          <h3 class="case-study-section-title">How we got there</h3>
+          <h4 class="case-study-sub-title">Discovery Research</h4>
+            <img src="images/project-text-analysis/discovery-research.png">
+            <img src="images/project-text-analysis/text-analysis-process.png">
+            <h5>A researcher's text analysis workflow.</h5>
+
+          <div class="case-study-sub-section">
+          <h4 class="case-study-sub-title">Workflow Friction</h4>
+            <ul>
+              <li><b>Missing context</b> - In Highlights, selected responses were presented in isolation of other responses. It was hard for users to understand how they were generated and to accept them.</li>
+              <li><b>AI limitations</b> - AI features excited prospect users during demos. But during analysis, researchers struggled to explain automated results to stakeholders.</li>
+              <li><b>Time vs. quality</b> - Reading every response is time-consuming and unscalable, but researchers didn't have an alternative that yielded results they could stand behind.</li>
+              <li><b>Behind competitors</b> - Customers expected a level of text-analysis parity with main competitors: sentiment analysis, NLP, cluster analysis, statistical analysis to name a few.</li>
+              <li><b>Reports need visuals</b> - Researchers struggled to visualize the output of open-ended questions in reporting.</li>
+            </ul>
+          </div>
+
+          <div class="case-study-sub-section">
+          <h4 class="case-study-sub-title">Design Explorations</h4>
+            <p>In early sketches, I considered how to let users navigate between a single response to a broader group of similar responses without losing context.</p>
+            <img src="images/project-text-analysis/layout-response-form.png">
+
+            <p>I explored various forms for integrating responses with manual tools: search and Common Topics filtering.</p>
+            <img src="images/project-text-analysis/CT-layout-explore.png">
+            
+            <p>I also experimented with condensing several data dimension into a single graphic to paint a more holistic story. Users liked the visuals, but it was difficult to find the right level of summarization and intersection that worked across various questions and stood up to data drill-downs.</p>
+            <img src="images/project-text-analysis/dimension-explore.png">
+            <h5>Didn't make the cut: Visuals intersecting topics, topic frequency, and participant agreement.</h5>
+          </div>
+
+          <div class="case-study-sub-section">
+          <h4 class="case-study-sub-title">Testing for Value</h4>
+            <p>We presented 6 possible directions to internal users and walked through their text analysis workflow to understand which aspects might help them. We refined a version based on their input to test with customers.</p>
+            <p>Our options gave a spectrum of manual to AI and blended solutions. Our internal team raised the most uncertainty over AI tools while many customers shared that they already used methods like sentiment labeling in their process.</p>
+            <img src="images/project-text-analysis/concept-value.png">
+          </div>
+
+          <div class="case-study-sub-section">
+          <h4 class="case-study-sub-title">Testing for Accuracy</h4>
+            <p>To ensure that researchers would accept the output of AI features, we ran tests for two of the most promising options, sentiment labels and automatic response grouping, using actual project data.</p>
+            <p>For sentiment, we learned that there is subjectivity in how a response could be interpreted, but having the labels as an organizing method still provided a very useful first pass of the data.</p>
+            <img src="images/project-text-analysis/test-sentiment.png">
+            <h5>Comparing automatic sentiment labeling against a researcher's manual labeling</h5>
+            <p>The testers were even more enthusiastic about automatically grouping responses. It provided the type of expected summarized view that Highlights could not.</p>
+            <p>Internal researchers were surprised by how relevant automatically grouped responses were compared with their own assessment.</p>
+            <img src="images/project-text-analysis/theme-quote.png">
+          </div>
+        </div>
+
+        <div class="case-study-section">
+          <h3 class="case-study-section-title">Learnings</h3>
+          <h4 class="case-study-sub-text">AI is not a panacea</h4> 
+            <p>Trust remains a critical factor in the adoption and value of AI tools. If a user cannot explain their findings to their boss or a client, they will skip it.</p>
+          
+          <h4 class="case-study-sub-text">AI is a very useful stepladder</h4>
+            <p>Users found AI tools helpful for quickly sketching out the outline of their final report. It also helped them by pointing out where responses were less clear-cut. However, researchers still needed to spend time reading and digesting the responses to familiarize themselves with the findings.</p>
+        </div>
+      </div>
+
+      <div class="case-study-stats">
+        <div class="stat-section stat1">
+          <p class="stat-title">My Role</p>
+          <h5>Sr. product designer</h5>
+        </div>
+        <div class="stat-section stat2">
+          <p class="stat-title">Tasks</p>
+          <h5>User research<br>Competitive analysis<br>UX UI design<br>Concept validation<br>Visual QA</h5>
+        </div>
+         <div class="stat-section stat3">
+          <p class="stat-title">Team</p>
+          <h5>Sr. product manager<br>Engineering manager<br>Data scientist<br>Engineers (4)<br>QA engineer</h5>
+        </div>
+        <div class="stat-section stat4">
+          <p class="stat-title">Duration</p>
+           <h5>6 months</h5>
+         </div>
+      </div>
+
+    </div>
+
+    <div class="project-page-nav-links">
+        <a class="button-resting" href="#top">Back to top</a>
+        <span class="gap"></span>
+        <a class="button-resting" href="./magoosh-dashboard.html">Next Project</a>
+    </div>
+
+  </div>
+</body>
+</html>
